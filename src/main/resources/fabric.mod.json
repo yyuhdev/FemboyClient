@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "femboyclient",
+  "version": "${version}",
+  "name": "FemboyClient",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/femboyclient/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.yyuh.femboyclient.client.FemboyClient"
+    ],
+    "main": [
+      "dev.yyuh.femboyclient.Femboyclient"
+    ]
+  },
+  "mixins": [
+    "femboyclient.mixins.json",
+    {
+      "config": "femboyclient.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": ">=${minecraft_version}"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.yyuh.femboyclient.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "InGameHudMixin",
+    "ItemRendererMixin",
+    "EntityPlayerClientMixin",
+    "RenderTickCounterMixin",
+    "MinecraftClientMixin",
+    "WorldRenderMixin",
+    "LightMapTextureMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

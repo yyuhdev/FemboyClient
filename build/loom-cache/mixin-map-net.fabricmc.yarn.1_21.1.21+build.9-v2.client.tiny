@@ -1,0 +1,3 @@
+v1	named	intermediary
+FIELD	dev/yyuh/femboyclient/client/mixin/InGameHudMixin	Lnet/minecraft/client/MinecraftClient;	client	field_2035
+METHOD	dev/yyuh/femboyclient/client/mixin/InGameHudMixin	(Z)V	tick	method_39191
