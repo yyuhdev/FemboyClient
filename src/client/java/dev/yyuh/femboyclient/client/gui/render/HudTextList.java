@@ -1,7 +1,9 @@
 package dev.yyuh.femboyclient.client.gui.render;
 
+import dev.yyuh.femboyclient.client.FemboyClient;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
+import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
@@ -76,7 +78,8 @@ public class HudTextList extends HudElement {
 
         int yOffset = getY() + padding;
         for (Text text : textList) {
-            context.drawTextWithShadow(mc.textRenderer, text, getX() + padding, yOffset, textColor);
+            FemboyClient.FONT_SCREEN_RENDERER.drawText(new MatrixStack(), text, getX() + padding, yOffset, textColor);
+//            context.drawTextWithShadow(mc.textRenderer, text, getX() + padding, yOffset, textColor);
             yOffset += mc.textRenderer.fontHeight + 2;
         }
     }
