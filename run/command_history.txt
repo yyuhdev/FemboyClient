@@ -1,4 +1,3 @@
-/register Test123 Test123
 /register Test123
 /register Test123 Test123
 /gamemode survival
@@ -46,3 +45,6 @@
 /summon minecraft:allay
 /summon minecraft:zombie
 /summon minecraft:pig
+/kill Player145
+/kill Player79
+/kill

@@ -4,10 +4,10 @@ import dev.yyuh.femboyclient.client.FemboyClient;
 import dev.yyuh.femboyclient.client.event.Subscribe;
 import dev.yyuh.femboyclient.client.events.HudRenderEvent;
 import dev.yyuh.femboyclient.client.gui.render.Button;
-import dev.yyuh.femboyclient.client.gui.render.HudElement;
-import dev.yyuh.femboyclient.client.gui.render.HudImage;
+import dev.yyuh.femboyclient.client.gui.hud.HudImage;
 import dev.yyuh.femboyclient.client.util.ConfigUtils;
 import net.minecraft.client.gui.DrawContext;
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.util.Identifier;
 
 public class AstolfoHudModule extends Button {
@@ -50,6 +50,11 @@ public class AstolfoHudModule extends Button {
     @Override
     public void render(DrawContext context, int mouseX, int mouseY, float partialTicks) {
         super.render(context, mouseX, mouseY, partialTicks);
+    }
+
+    @Override
+    public Screen createSettingsPanel() {
+        return null;
     }
 
     @Subscribe

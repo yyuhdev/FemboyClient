@@ -3,6 +3,7 @@ package dev.yyuh.femboyclient.client.module;
 import dev.yyuh.femboyclient.client.gui.render.Button;
 import dev.yyuh.femboyclient.client.util.ConfigUtils;
 import net.minecraft.client.gui.DrawContext;
+import net.minecraft.client.gui.screen.Screen;
 
 public class ItemSizeModule extends Button {
     public static boolean enabled = false;
@@ -34,7 +35,13 @@ public class ItemSizeModule extends Button {
         enabled = ConfigUtils.get(CONFIG_PATH);
     }
 
+    @Override
+    public Screen createSettingsPanel() {
+        return null;
+    }
+
     public static boolean isToggled() {
         return enabled;
     }
+    
 }

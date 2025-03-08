@@ -7,8 +7,8 @@ import dev.yyuh.femboyclient.client.events.RenderEntityEvent;
 import dev.yyuh.femboyclient.client.gui.render.Button;
 import dev.yyuh.femboyclient.client.render.ESPRenderer;
 import dev.yyuh.femboyclient.client.util.ConfigUtils;
-import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.util.math.Box;
@@ -55,6 +55,11 @@ public class EntityESPModule extends Button {
     public void load() {
         this.toggled = ConfigUtils.get(CONFIG_PATH);
         enabled = ConfigUtils.get(CONFIG_PATH);
+    }
+
+    @Override
+    public Screen createSettingsPanel() {
+        return null;
     }
 
     public static boolean isToggled() {

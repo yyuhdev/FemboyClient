@@ -1,10 +1,10 @@
 package dev.yyuh.femboyclient.client.module;
 
-import dev.yyuh.femboyclient.client.FemboyClient;
 import dev.yyuh.femboyclient.client.gui.render.Button;
 import dev.yyuh.femboyclient.client.util.ConfigUtils;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
+import net.minecraft.client.gui.screen.Screen;
 
 //TODO: This
 public class CriticalsModule extends Button {
@@ -37,6 +37,11 @@ public class CriticalsModule extends Button {
     public void load() {
         this.toggled = ConfigUtils.get(CONFIG_PATH);
         enabled = ConfigUtils.get(CONFIG_PATH);
+    }
+
+    @Override
+    public Screen createSettingsPanel() {
+        return null;
     }
 
     public static boolean isToggled() {

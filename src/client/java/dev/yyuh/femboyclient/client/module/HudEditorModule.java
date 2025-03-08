@@ -3,6 +3,7 @@ package dev.yyuh.femboyclient.client.module;
 import dev.yyuh.femboyclient.client.gui.HudEditorScreen;
 import dev.yyuh.femboyclient.client.gui.render.Button;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.gui.screen.Screen;
 
 /*
 
@@ -28,5 +29,10 @@ public class HudEditorModule extends Button {
     @Override
     public void load() {
 
+    }
+
+    @Override
+    public Screen createSettingsPanel() {
+        return null;
     }
 }

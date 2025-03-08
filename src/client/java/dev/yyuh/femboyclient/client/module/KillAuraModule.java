@@ -7,16 +7,15 @@ import dev.yyuh.femboyclient.client.events.ClientPlayerTickEvent;
 import dev.yyuh.femboyclient.client.events.HudRenderEvent;
 import dev.yyuh.femboyclient.client.events.RenderEntityEvent;
 import dev.yyuh.femboyclient.client.gui.render.Button;
-import dev.yyuh.femboyclient.client.module.submodules.HealthIndicator;
 import dev.yyuh.femboyclient.client.render.ESPRenderer;
 import dev.yyuh.femboyclient.client.util.ConfigUtils;
 import dev.yyuh.femboyclient.client.util.RotationUtils;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.network.packet.c2s.play.PlayerMoveC2SPacket;
-import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.Box;
 
@@ -60,6 +59,11 @@ public class KillAuraModule extends Button {
     public void load() {
         this.toggled = ConfigUtils.get(CONFIG_PATH);
         enabled = ConfigUtils.get(CONFIG_PATH);
+    }
+
+    @Override
+    public Screen createSettingsPanel() {
+        return null;
     }
 
     @Subscribe

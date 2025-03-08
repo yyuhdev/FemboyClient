@@ -6,14 +6,14 @@ import dev.yyuh.femboyclient.client.events.HudRenderEvent;
 import dev.yyuh.femboyclient.client.gui.render.Button;
 import dev.yyuh.femboyclient.client.gui.render.ClickGui;
 import dev.yyuh.femboyclient.client.gui.render.Component;
-import dev.yyuh.femboyclient.client.gui.render.HudTextList;
+import dev.yyuh.femboyclient.client.gui.hud.HudTextList;
 import dev.yyuh.femboyclient.client.util.ConfigUtils;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.text.Text;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
 public class HackListModule extends Button {
@@ -51,6 +51,11 @@ public class HackListModule extends Button {
 
         ConfigUtils.HudPosition position = ConfigUtils.getPosition(CONFIG_PATH);
         updatePosition(position);
+    }
+
+    @Override
+    public Screen createSettingsPanel() {
+        return null;
     }
 
     @Subscribe

@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FemboyClient.client.iml" filepath="$PROJECT_DIR$/.idea/modules/FemboyClient.client.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FemboyClient.main.iml" filepath="$PROJECT_DIR$/.idea/modules/FemboyClient.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FemboyClient.test.iml" filepath="$PROJECT_DIR$/.idea/modules/FemboyClient.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yyuh.dev.FemboyClient.client.iml" filepath="$PROJECT_DIR$/.idea/modules/yyuh.dev.FemboyClient.client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yyuh.dev.FemboyClient.main.iml" filepath="$PROJECT_DIR$/.idea/modules/yyuh.dev.FemboyClient.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yyuh.dev.FemboyClient.test.iml" filepath="$PROJECT_DIR$/.idea/modules/yyuh.dev.FemboyClient.test.iml" />
     </modules>
   </component>
 </project>

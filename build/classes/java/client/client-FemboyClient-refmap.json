@@ -24,6 +24,15 @@
     "dev/yyuh/femboyclient/client/mixin/RenderTickCounterMixin": {
       "beginRenderTick(JZ)I": "Lnet/minecraft/class_9779$class_9781;method_60640(JZ)I"
     },
+    "dev/yyuh/femboyclient/client/mixin/RotatingCubeMapRendererMixin": {
+      "render": "Lnet/minecraft/class_766;method_3317(Lnet/minecraft/class_332;IIFF)V"
+    },
+    "dev/yyuh/femboyclient/client/mixin/TitleScreenMixin": {
+      "render": "Lnet/minecraft/class_442;method_25394(Lnet/minecraft/class_332;IIF)V"
+    },
+    "dev/yyuh/femboyclient/client/mixin/WindowMixin": {
+      "setIcon": "Lnet/minecraft/class_1041;method_4491(Lnet/minecraft/class_3262;Lnet/minecraft/class_8518;)V"
+    },
     "dev/yyuh/femboyclient/client/mixin/WorldRenderMixin": {
       "renderEntity": "Lnet/minecraft/class_761;method_22977(Lnet/minecraft/class_1297;DDDFLnet/minecraft/class_4587;Lnet/minecraft/class_4597;)V"
     }
@@ -53,6 +62,15 @@
       },
       "dev/yyuh/femboyclient/client/mixin/RenderTickCounterMixin": {
         "beginRenderTick(JZ)I": "Lnet/minecraft/class_9779$class_9781;method_60640(JZ)I"
+      },
+      "dev/yyuh/femboyclient/client/mixin/RotatingCubeMapRendererMixin": {
+        "render": "Lnet/minecraft/class_766;method_3317(Lnet/minecraft/class_332;IIFF)V"
+      },
+      "dev/yyuh/femboyclient/client/mixin/TitleScreenMixin": {
+        "render": "Lnet/minecraft/class_442;method_25394(Lnet/minecraft/class_332;IIF)V"
+      },
+      "dev/yyuh/femboyclient/client/mixin/WindowMixin": {
+        "setIcon": "Lnet/minecraft/class_1041;method_4491(Lnet/minecraft/class_3262;Lnet/minecraft/class_8518;)V"
       },
       "dev/yyuh/femboyclient/client/mixin/WorldRenderMixin": {
         "renderEntity": "Lnet/minecraft/class_761;method_22977(Lnet/minecraft/class_1297;DDDFLnet/minecraft/class_4587;Lnet/minecraft/class_4597;)V"

@@ -4,13 +4,16 @@
   "package": "dev.yyuh.femboyclient.client.mixin",
   "compatibilityLevel": "JAVA_21",
   "client": [
+    "EntityPlayerClientMixin",
     "InGameHudMixin",
     "ItemRendererMixin",
-    "EntityPlayerClientMixin",
-    "RenderTickCounterMixin",
+    "LightMapTextureMixin",
     "MinecraftClientMixin",
+    "RenderTickCounterMixin",
+    "RotatingCubeMapRendererMixin",
+    "TitleScreenMixin",
     "WorldRenderMixin",
-    "LightMapTextureMixin"
+    "WindowMixin"
   ],
   "injectors": {
     "defaultRequire": 1

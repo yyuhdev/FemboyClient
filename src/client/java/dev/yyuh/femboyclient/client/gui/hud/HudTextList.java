@@ -1,11 +1,8 @@
-package dev.yyuh.femboyclient.client.gui.render;
+package dev.yyuh.femboyclient.client.gui.hud;
 
-import dev.yyuh.femboyclient.client.FemboyClient;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
-import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,9 +19,9 @@ public class HudTextList extends HudElement {
     public HudTextList(int x, int y) {
         super(x, y, 0, 0);
         this.textList = new ArrayList<>();
-        this.textColor = 0xFFFFFF; // Default text color (white)
-        this.backgroundColor = 0x80000000; // Default background color (semi-transparent black)
-        this.backgroundEnabled = true;
+        this.textColor = 0xFFFFFF;
+        this.backgroundColor = 0x80000000;
+        this.backgroundEnabled = false;
     }
 
     public void addText(Text text) {
@@ -78,8 +75,7 @@ public class HudTextList extends HudElement {
 
         int yOffset = getY() + padding;
         for (Text text : textList) {
-            FemboyClient.FONT_SCREEN_RENDERER.drawText(new MatrixStack(), text, getX() + padding, yOffset, textColor);
-//            context.drawTextWithShadow(mc.textRenderer, text, getX() + padding, yOffset, textColor);
+            context.drawTextWithShadow(mc.textRenderer, text, getX() + padding, yOffset, textColor);
             yOffset += mc.textRenderer.fontHeight + 2;
         }
     }

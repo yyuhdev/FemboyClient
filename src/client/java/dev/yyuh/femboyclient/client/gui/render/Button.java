@@ -2,6 +2,7 @@ package dev.yyuh.femboyclient.client.gui.render;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
+import net.minecraft.client.gui.screen.Screen;
 
 public abstract class Button extends Component {
     public final String label;
@@ -24,6 +25,8 @@ public abstract class Button extends Component {
         context.fill(x, y, x + 1, y + height, borderColor);
         context.fill(x + width - 1, y, x + width, y + height, borderColor);
 
+        if(isHovered(mouseX, mouseY)) context.fill(x, y, x + width, y + height, 0x20FFFFFF);
+
         context.drawText(MinecraftClient.getInstance().textRenderer, label, x + 4, y + 6, 0xFFFFFFFF, false);
     }
 
@@ -33,9 +36,14 @@ public abstract class Button extends Component {
             if (mouseButton == 0) {
                 onClick();
                 save();
+            } else if (mouseButton == 1) {
+
+                if(createSettingsPanel() == null) return;
+                MinecraftClient.getInstance().setScreen(createSettingsPanel());
             }
         }
     }
+
 
     @Override
     public void handleMouseRelease(int mouseX, int mouseY, int mouseButton) {
@@ -48,4 +56,5 @@ public abstract class Button extends Component {
     public abstract void onClick();
     public abstract void save();
     public abstract void load();
+    public abstract Screen createSettingsPanel();
 }

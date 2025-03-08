@@ -9,6 +9,7 @@ import dev.yyuh.femboyclient.client.util.InventoryUtils;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.item.Items;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
@@ -43,6 +44,11 @@ public class QuickAirPlaceModule extends Button {
     public void load() {
         this.toggled = ConfigUtils.get(CONFIG_PATH);
         enabled = ConfigUtils.get(CONFIG_PATH);
+    }
+
+    @Override
+    public Screen createSettingsPanel() {
+        return null;
     }
 
     @Override

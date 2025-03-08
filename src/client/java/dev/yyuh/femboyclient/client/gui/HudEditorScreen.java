@@ -1,6 +1,6 @@
 package dev.yyuh.femboyclient.client.gui;
 
-import dev.yyuh.femboyclient.client.gui.render.HudElement;
+import dev.yyuh.femboyclient.client.gui.hud.HudElement;
 import dev.yyuh.femboyclient.client.module.AstolfoHudModule;
 import dev.yyuh.femboyclient.client.module.HackListModule;
 import dev.yyuh.femboyclient.client.module.submodules.HealthIndicator;

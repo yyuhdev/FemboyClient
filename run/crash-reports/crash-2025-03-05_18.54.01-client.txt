@@ -5,7 +5,7 @@ Time: 2025-03-05 18:54:01
 Description: Rendering screen
 
 java.lang.NullPointerException: Cannot invoke "net.minecraft.entity.LivingEntity.getHealth()" because "this.target" is null
-	at dev.yyuh.femboyclient.client.gui.render.HudHealthDisplay.render(HudHealthDisplay.java:29)
+	at dev.yyuh.femboyclient.client.gui.hud.HudHealthDisplay.render(HudHealthDisplay.java:29)
 	at dev.yyuh.femboyclient.client.gui.HudEditorScreen.render(HudEditorScreen.java:42)
 	at net.minecraft.client.gui.screen.Screen.renderWithTooltip(Screen.java:114)
 	at net.minecraft.client.render.GameRenderer.mixinextras$bridge$renderWithTooltip$177(GameRenderer.java)
@@ -26,7 +26,7 @@ A detailed walkthrough of the error, its code path and all known details is as f
 -- Head --
 Thread: Render thread
 Stacktrace:
-	at dev.yyuh.femboyclient.client.gui.render.HudHealthDisplay.render(HudHealthDisplay.java:29)
+	at dev.yyuh.femboyclient.client.gui.hud.HudHealthDisplay.render(HudHealthDisplay.java:29)
 	at dev.yyuh.femboyclient.client.gui.HudEditorScreen.render(HudEditorScreen.java:42)
 	at net.minecraft.client.gui.screen.Screen.renderWithTooltip(Screen.java:114)
 	at net.minecraft.client.render.GameRenderer.mixinextras$bridge$renderWithTooltip$177(GameRenderer.java)

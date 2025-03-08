@@ -1,6 +1,6 @@
 package dev.yyuh.femboyclient.client.module.submodules;
 
-import dev.yyuh.femboyclient.client.gui.render.HudHealthDisplay;
+import dev.yyuh.femboyclient.client.gui.hud.HudHealthDisplay;
 import dev.yyuh.femboyclient.client.util.ConfigUtils;
 import net.minecraft.entity.LivingEntity;
 

@@ -1,30 +1,27 @@
-package dev.yyuh.femboyclient.client.gui.render;
+package dev.yyuh.femboyclient.client.gui.hud;
 
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.util.Identifier;
 
-public abstract class HudElement {
+public class HudImage extends HudElement {
     private int x, y;
-    private int width, height;
+    private final int width, height;
+    private final Identifier texture;
     private boolean dragging = false;
     private int dragOffsetX, dragOffsetY;
 
-    public void setWidth(int width) {
-        this.width = width;
-    }
-
-    public void setHeight(int height) {
-        this.height = height;
-    }
-
-    public HudElement(int x, int y, int width, int height) {
+    public HudImage(int x, int y, int width, int height, Identifier texture) {
+        super(x, y, width, height);
         this.x = x;
         this.y = y;
         this.width = width;
         this.height = height;
+        this.texture = texture;
     }
 
-    public abstract void render(DrawContext context);
+    public void render(DrawContext context) {
+        context.drawTexture(texture, x, y, 0, 0, width, height, width, height);
+    }
 
     public boolean isMouseOver(int mouseX, int mouseY) {
         return mouseX >= x && mouseX <= x + width && mouseY >= y && mouseY <= y + height;
@@ -38,14 +35,6 @@ public abstract class HudElement {
 
     public void stopDragging() {
         dragging = false;
-    }
-
-    public int getWidth() {
-        return width;
-    }
-
-    public int getHeight() {
-        return height;
     }
 
     public void updatePosition(int mouseX, int mouseY) {

@@ -11,6 +11,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.network.PlayerListEntry;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.decoration.EndCrystalEntity;
@@ -56,6 +57,11 @@ public class CrystalOptimizerModule extends Button {
     public void load() {
         this.toggled = ConfigUtils.get(CONFIG_PATH);
         enabled = ConfigUtils.get(CONFIG_PATH);
+    }
+
+    @Override
+    public Screen createSettingsPanel() {
+        return null;
     }
 
     @Override

@@ -38,7 +38,7 @@ Caused by: net.minecraft.util.crash.CrashException: Registering texture
 	at net.minecraft.client.gui.DrawContext.drawTexture(DrawContext.java:448)
 	at net.minecraft.client.gui.DrawContext.drawTexture(DrawContext.java:432)
 	at net.minecraft.client.gui.DrawContext.drawTexture(DrawContext.java:442)
-	at dev.yyuh.femboyclient.client.gui.render.HudElement.render(HudElement.java:22)
+	at dev.yyuh.femboyclient.client.gui.hud.HudElement.render(HudElement.java:22)
 	at dev.yyuh.femboyclient.client.module.KillAuraModule.onHudRender(KillAuraModule.java:92)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	... 19 more

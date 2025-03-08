@@ -1,4 +1,4 @@
-package dev.yyuh.femboyclient.client.gui.render;
+package dev.yyuh.femboyclient.client.gui.hud;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;

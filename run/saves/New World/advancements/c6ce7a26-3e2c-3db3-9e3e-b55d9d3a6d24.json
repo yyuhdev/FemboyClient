@@ -7,6 +7,7 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "minecraft:taiga": "2025-03-08 12:49:57 +0100",
       "minecraft:river": "2025-03-03 16:40:01 +0100"
     },
     "done": false
